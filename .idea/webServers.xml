@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f812c289-366f-4b94-8f99-b5b345007526" name="tvace">
+        <fileTransfer rootFolder="/var/www/detali/data/www/tvace.detali.pw/" accessType="SFTP" host="95.214.63.164" port="22" sshConfigId="7333fa3d-35e1-4384-925d-6e06902b227a" sshConfig="detali@95.214.63.164:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
