@@ -2,12 +2,12 @@
 <script type="text/javascript">
 {literal}
 
-Ext.onReady(function() {
+Ext.onReady(function(textEditor) {
 	var TextEditor = MODx.load({
 		xtype: 'modx-texteditor'
 		{/literal}
 		,name: 'tv{$tv->id}'
-		,applyTo: 'tv{$tv->id}'
+		,renderTo: 'tv{$tv->id}'
 		,value: '{$tv->get('value')|escape:'javascript'}'
 		,height: 140
 		,width: '99%'
@@ -35,11 +35,6 @@ Ext.onReady(function() {
         iframe: true
     });
 
-    var tvAce = Ext.getCmp('modx-panel-resource').getForm();
-    if (tvAce) {
-        tvAce.add(TextEditor);
-        tvAce.doLayout();
-    }
 });
 {/literal}
 </script>
